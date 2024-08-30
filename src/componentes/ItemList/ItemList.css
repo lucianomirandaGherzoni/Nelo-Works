@@ -1,0 +1,23 @@
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    padding: 20px 150px;
+    gap: .5rem;
+}
+.produtos-contenido .titulo-slider{
+    padding: 10px 150px;
+}
+@media (max-width: 768px) {
+
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 10px 10px;
+        
+    }
+    .produtos-contenido .titulo-slider{
+        padding: 10px 10px;
+    }
+  }
