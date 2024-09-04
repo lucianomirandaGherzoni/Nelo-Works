@@ -3,7 +3,6 @@ import Contador from '../Contador/Contador';
 import { Link } from 'react-router-dom';
 import { CarritoContext } from '../../context/CarritoContext';
 import SliderProduct from '../SliderProduct/SliderProduct';
-import SliderDos from '../SliderDos/SliderDos';
 import './ItemDetail.css';
 
 
@@ -55,7 +54,6 @@ const ItemDetail = ({ id, nombre, precio, img, descripcion, descripcionDos, stoc
                     </div>
                  
                 </div>
-             {/*    <SliderDos/> */}
             </div>
           
             <SliderProduct />
