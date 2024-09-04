@@ -15,9 +15,7 @@ const About = () => {
   return (
     <div id='about'>
       <BannerTitulo titulo="" subtitulo="Galeria de Nelo" />
-
       <div className='about'>
-
         <div className='about-imagenes'>
           <div className='grande'><img src={galeriaUno} alt="NeloWorks Historia" /></div>
           <div className='grande'><img src={galeriaCuatro} alt="NeloWorks Historia" /></div>
@@ -28,6 +26,49 @@ const About = () => {
           <div className='chico'><img src={galeriaSiete} alt="NeloWorks Historia" /></div>
           <div className='mediano'><img src={galeriaOcho} alt="NeloWorks Historia" /></div>
         </div>
+
+        {/*     galeria react  */}
+        <section className='galeria-responsive'>
+          <div id="carouselExampleFade" className="carousel slide carousel-fade">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={galeriaUno} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+              <div className="carousel-item">
+                <img src={galeriaCuatro} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+              <div className="carousel-item">
+                <img src={galeriaDos} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+              <div className="carousel-item">
+                <img src={galeriaTres} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+
+              <div className="carousel-item">
+                <img src={galeriaCinco} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+              <div className="carousel-item">
+                <img src={galeriaSeis} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+              <div className="carousel-item">
+                <img src={galeriaSiete} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+              <div className="carousel-item">
+                <img src={galeriaOcho} className="d-block w-100" alt="NeloWorks Historia" />
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        {/*     galeria react  */}
+
         <div className='about-contenido'>
           <div>
             <h3>Historia</h3>

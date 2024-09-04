@@ -55,7 +55,7 @@ const ItemDetail = ({ id, nombre, precio, img, descripcion, descripcionDos, stoc
                     </div>
                  
                 </div>
-                <SliderDos/>
+             {/*    <SliderDos/> */}
             </div>
           
             <SliderProduct />

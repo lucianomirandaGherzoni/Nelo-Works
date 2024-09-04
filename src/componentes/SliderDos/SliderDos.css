@@ -1,5 +1,4 @@
 .slider{
-     width: 75 vw;
      height: auto;
      margin: auto;
      overflow: hidden;
@@ -7,8 +6,8 @@
 
 .slider .slider-track {
     display: flex;
-    animation: scroll 50s linear infinite;
-    -webkit-animation: scroll 50s linear infinite;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
     width: calc(200px * 14); 
 }
 .slider .slide{

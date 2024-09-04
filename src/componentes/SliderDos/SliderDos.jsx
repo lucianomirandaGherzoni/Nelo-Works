@@ -46,6 +46,8 @@ const SliderDos = () => {
                 <div className="slide">
                     <div>NELO WORKS</div>
                 </div>
+                
+                
             </div>
 
 

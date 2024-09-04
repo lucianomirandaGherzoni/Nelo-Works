@@ -6,7 +6,10 @@
     padding: 20px;
     width: 100%
 }
-
+section .carousel-inner{
+    height: 50vh;
+    display: none;
+}
 .about-imagenes {
     width: 100%;
     margin: 2rem auto;
@@ -90,8 +93,14 @@
 
 @media (max-width: 769px) {
 
-    .about-imagenes div {
-        width: 100%;
-        height: 300px;
+    .about-imagenes {
+        display: none;
+    }
+    section .carousel-inner{
+        height: 90vh;
+        display: block;
+    }
+    .carousel-item img{
+        object-fit: cover;
     }
 }  

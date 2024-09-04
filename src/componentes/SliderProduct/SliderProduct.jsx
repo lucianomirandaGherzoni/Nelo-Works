@@ -53,7 +53,7 @@ const SliderProduct = () => {
             </div>
             <Carousel responsive={responsive}>
                {product}
-            </Carousel>;
+            </Carousel>
         </div>
     )
 }
