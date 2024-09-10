@@ -7,7 +7,7 @@
     width: 100%
 }
 section .carousel-inner{
-    height: 50vh;
+    height: auto;
     display: none;
 }
 .about-imagenes {
