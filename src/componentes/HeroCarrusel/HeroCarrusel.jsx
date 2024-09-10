@@ -1,6 +1,6 @@
 
 import './HeroCarrusel.css';
-import BannerInfo from '../BannerInfo/BannerInfo';
+
 
 const HeroCarrusel = () => {
     const imgUno = "../img/hero/uno.webp";
@@ -50,7 +50,7 @@ const HeroCarrusel = () => {
 
 
             </div>
-           <BannerInfo/>
+          
 
         </>
     )

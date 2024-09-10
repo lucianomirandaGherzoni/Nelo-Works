@@ -97,8 +97,8 @@ section .carousel-inner{
         display: none;
     }
     section .carousel-inner{
-        height: 90vh;
         display: block;
+        margin:2rem 0rem 1rem 0rem;
     }
     .carousel-item img{
         object-fit: cover;

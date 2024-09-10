@@ -3,7 +3,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css'
 import { db } from "../../services/config";
 import Item from "../Item/Item";
-import { collection, getDocs} from "firebase/firestore";
+import BannerInfo from "../BannerInfo/BannerInfo"
+import { collection, getDocs } from "firebase/firestore";
 import './SliderProduct.css'
 
 const SliderProduct = () => {
@@ -43,18 +44,22 @@ const SliderProduct = () => {
     }, [])
 
 
-    const product =  productos.map(item => <Item key ={item.id}{...item}/>) ;
+    const product = productos.map(item => <Item key={item.id}{...item} />);
 
 
     return (
-        <div className="slider-productos">
-            <div className="titulo-slider">
-             PRODUCTOS DESTACADOS🔥
+        <>
+            <div className="slider-productos">
+                <div className="titulo-slider">
+                    PRODUCTOS DESTACADOS🔥
+                </div>
+                <Carousel responsive={responsive}>
+                    {product}
+                </Carousel>
             </div>
-            <Carousel responsive={responsive}>
-               {product}
-            </Carousel>
-        </div>
+            <BannerInfo />
+        </>
+
     )
 }
 
