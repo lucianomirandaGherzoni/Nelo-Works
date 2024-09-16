@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDfkVPeGAfTRmkYqUMEEPZehbcMq8ZswKU",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "neloworks-db.firebaseapp.com",
   projectId: "neloworks-db",
   storageBucket: "neloworks-db.appspot.com",

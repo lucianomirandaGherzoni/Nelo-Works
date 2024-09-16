@@ -9,7 +9,7 @@ const HeroCarrusel = () => {
 
     return (
         <>
-            <div className='hero-content'>
+            <div className='hero-content-1'>
 
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                     <div className="carousel-indicators indicadores-carrusel ">
@@ -32,8 +32,8 @@ const HeroCarrusel = () => {
                                 <img src="../img/logo-letras.webp" alt="logo Nelo" />
                             </div>
                         </div>
-                        
-                        <div className="carousel-item active">
+
+                        <div className="carousel-item item-tres active" >
                             <img src={imgTres} className="d-block w-100 img" alt="NeloWorks Imagenes" />
                             <div className="carousel-caption2">
                                 <img src="../img/logo-letras.webp" alt="logo Nelo" />
@@ -42,15 +42,18 @@ const HeroCarrusel = () => {
                         </div>
 
                     </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">                    
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">                       
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     </button>
                 </div>
-
-
             </div>
-          
+            <div className="hero-content-2">
+                <img src={imgUno} alt="nelo" />
+                <div className="carousel-caption2">
+                    <img src="../img/logo-letras.webp" alt="logo Nelo" />
+                </div>
+            </div>
 
         </>
     )

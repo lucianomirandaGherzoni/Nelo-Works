@@ -2,6 +2,13 @@
 .indicadores-carrusel {
   max-width: 100%
 }
+.hero-content-2 img{
+  width: 100%;
+  height: 90vh;
+}
+.hero-content-1{
+  display: none;
+}
 .carousel-item{
   height: auto;
 }
@@ -12,18 +19,6 @@
   object-fit: cover;
 }
 
-.carousel-caption {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25rem;
-  gap: .5rem;
-}
 
 .carousel-caption button {
   padding: .5rem;
@@ -54,11 +49,11 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 75%;
+  left: 90%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  width: 12rem;
+  width: 15rem;
   height: 12rem;
   background-color: transparent;
   border-radius: 100%;
@@ -81,7 +76,26 @@
 
 
 @media (max-width: 992px) {
+  .carousel-caption2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 100%;
+  }
 
+  .hero-content-1{
+    display: block;
+  }
+  .hero-content-2 img{
+   display: none;
+  }
   .carousel-caption {
     text-align: center;
     left: 50%;
@@ -104,6 +118,6 @@
    height:auto;
   }
   .carousel-caption2 img {
-    width: 150px;
+    width: 100px;
   }
 }
