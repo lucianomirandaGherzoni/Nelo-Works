@@ -79,9 +79,3 @@
     color: var(--clr-oscuro);
     font-weight: 700;
 }
-@media (max-width: 768px) {
-    .productoCard {
-        min-height: fit-content;
-    }
-    
-  }

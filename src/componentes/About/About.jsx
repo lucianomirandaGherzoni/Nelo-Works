@@ -1,6 +1,7 @@
-import './About.css'
-import BannerTitulo from '../BannerTitulo/BannerTitulo'
 
+import BannerTitulo from '../BannerTitulo/BannerTitulo'
+import Historia from '../Historia/Historia';
+import './About.css'
 const About = () => {
 
   const galeriaUno = "../img/galeria/galeria-1.webp";
@@ -28,15 +29,21 @@ const About = () => {
         </div>
 
         {/*     galeria react  */}
+
         <section className='galeria-responsive'>
           <div id="carouselExampleFade" className="carousel slide carousel-fade">
             <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img src={galeriaUno} className="d-block w-100" alt="NeloWorks Historia" />
-              </div>
-              <div className="carousel-item">
+              
+            <div className="carousel-item active">
                 <img src={galeriaCuatro} className="d-block w-100" alt="NeloWorks Historia" />
               </div>
+
+            <div className="carousel-item">
+                <img src={galeriaUno} className="d-block w-100" alt="NeloWorks Historia" />
+              </div> 
+
+           
+            
               <div className="carousel-item">
                 <img src={galeriaDos} className="d-block w-100" alt="NeloWorks Historia" />
               </div>
@@ -69,15 +76,7 @@ const About = () => {
         </section>
         {/*     galeria react  */}
 
-        <div className='about-contenido'>
-          <div>
-            <h3>Historia</h3>
-            <p> Nacho, un artesano apasionado, da vida a alfombras únicas con la técnica <strong>Tufting.</strong> Cada pieza, elaborada con materiales naturales y técnicas tradicionales, refleja la belleza de su región.
-              Inspirado por <strong>Neloworks</strong>, Nacho crea alfombras con diseños vibrantes y texturas suaves. Su trabajo no solo es un arte, sino también un compromiso con sus clientes.
-              Las alfombras de Neloworks son más que alfombras; <strong>son piezas únicas que cuentan historias</strong>, conectan con la tradición y aportan calidez a cualquier espacio.
-            </p>
-          </div>
-        </div>
+        <Historia/>
       </div>
     </div>
   )

@@ -28,11 +28,11 @@ const Footer = () => {
       <div className='categorias'>
         <h3>CATEGORIAS</h3>
         <ul>
-        <Link to='/'><li>Inicio</li> </Link>
-           <Link to='productos'><li>Productos</li></Link>
-          <Link to='contacto'><li>Contacto</li></Link>
-          <Link to='informacion'><li>Informacion de envios</li></Link>
-          <Link to='productos'><li>Seguir Comprando!</li></Link>
+        <Link to='/'><li><strong>Inicio</strong></li> </Link>
+           <Link to='productos'><li><strong>Productos</strong></li></Link>
+          <Link to='contacto'><li><strong>Contacto</strong></li></Link>
+          <Link to='informacion'><li><strong>Informacion de envios</strong></li></Link>
+          <Link to='productos'><li><strong>Seguir Comprando!</strong></li></Link>
         </ul>
       </div>
 
